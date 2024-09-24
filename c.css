@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+}
+
+header h1 {
+    display: inline-block;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.top-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    background-color: #f4f4f4;
+}
+
+.top-info .weather, .top-info .stocks {
+    width: 48%;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section.news {
+    margin: 40px 0;
+}
+
+section.news .news-article {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .top-info {
+        flex-direction: column;
+    }
+
+    .top-info .weather, .top-info .stocks {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    nav {
+        text-align: center;
+        float: none;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+}
